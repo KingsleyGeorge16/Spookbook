@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/lo0.png" sizes="10x10" type="images/jpg">
+    <title>spookbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav>
+        <div class="left-navbar">
+           <a href="index.html"><i class="fa fa-snapchat-ghost ghost"></i></a><a href="index.html"><h1>spookbook</h1></a>
+            <!-- <img src="images/logo.jpg" class="logo"> -->
+            <!-- <ul>
+            <a href="#!"><li><img src="images/notify.jpg" style="border-radius: 15px;" alt=""></li></a>
+            <a href="#!"><li><img src="images/inbox1.jpg" style="border-radius: 5px;" alt=""></li></a>
+            <a href="#!"><li><img src="images/video1.jpg" style="border-radius: 5px;" alt=""></li></a>
+            </ul> -->
+             <ul>
+                <a href="#!"><li><i class="fa fa-bell-o"></i></li></a>
+                <a href="#!"><li><i class="fa fa-envelope-o"></i></li></a>
+                <a href="#!"><li><i class="fa fa-film"></i></li></a>
+                <a href="#!"><li><i class="fa fa-search sear"></i></li></a>
+            </ul>
+        </div>
+        <div class="right-navbar">
+
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                 <!-- <img src="images/search1.jpg" alt="">  -->
+                <input type="search" class="search-input" placeholder="Search">
+            </div>
+            <!-- <div class="navbar-user-icon online"> -->
+                 <div class="navbar-user-icon" onclick="profileMenuToggle()">
+                    <a href="#!"><img src="images/img.png" alt=""></a>
+                 </div>
+            <!-- </div> -->
+        </div>
+
+        <!-- Setting Menu -->
+        <div class="profile-menu">
+
+            <p style="color: #4d4d4d; padding-left: 190px; padding-top: 20px;">Dark Mode</p>
+
+            <div id="dark-button">
+                <span></span>
+            </div>
+            
+
+            <div class="profile-menu-inner">
+                <div class="user-profile">
+                    <img src="images/img.png" alt="">
+                    <div>
+                        <p>Kingsley George</p>
+                        <a href="#!">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <!-- <img src="images/give.png" class="profile-icon" alt=""> -->
+                    <i class="fa fa-commenting" style="font-size: 2.2rem; color: #4d4d4d;"></i>
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#!">Help Us To Improve The New Design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-links">
+                    <!-- <img src="images/setting.jpg" style="width: 38px;" class="profile-icon"> -->
+                    <i class="fa fa-cog profile-icons"></i>
+                    <a href="#!">Settings & Privacy <i class="fa fa-angle-right" style="font-size: 2.2rem; color: #4d4d4d;"></i></a>
+                </div>
+                <div class="profile-links">
+                    <!-- <img src="images/help.png" class="profile-icon"> -->
+                    <i class="fa fa-question-circle profile-icons"></i>
+                      <a href="#!">Help & Support <i class="fa fa-angle-right" style="font-size: 2.2rem; color: #4d4d4d;"></i></a>
+                  </div>
+                <div class="profile-links">
+                    <img src="images/display.png" class="profile-icon">
+                    <!-- <i class="fa fa-person-circle profile-icons"></i> -->
+                      <a href="#!">Display & Accessibility <i class="fa fa-angle-right" style="font-size: 2.2rem; color: #4d4d4d;"></i></a>
+                      <!-- <a href="#!">Display & Accessibility <img src="images/arrow.jpg" style="border-radius: 30px;"></a> -->
+                </div>
+                <div class="profile-links">
+                    <!-- <img src="images/logout.png" class="setting-icon"> -->
+                    <i class="fa fa-sign-out profile-icons"></i>
+                      <a href="signup.html">Logout <i class="fa fa-angle-right" style="font-size: 2.2rem; color: #4d4d4d;"></i></a>
+                </div>
+
+            </div>
+           
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <!-- <div class="imp-links">
+                <a href="#!"><img src="images/news.jpg" alt="">Latest News</a>
+                <a href="#!"><img src="images/friends.jpg" alt="">Friends</a>
+                <a href="#!"><img src="images/group1.jpg" alt="">Groups</a>
+                <a href="#!"><img src="images/marketplace.jpg" alt="">Market Place</a>
+                <a href="#!"><img src="images/watch.jpg" alt="">Watch</a>
+                <a href="#!">See More...</a>
+            </div> -->
+            <div class="links">
+                <a href="#!"><i class="fa fa-laptop"></i>Latest News</a>
+                <a href="#!"><i class="fa fa-user"></i>Friends</a>
+                <a href="#!"><i class="fa fa-group"></i>Groups</a>
+                <a href="#!"><i class="fa fa-shopping-cart"></i>Market Place</a>
+                <a href="#!"><i class="fa fa-film"></i>Watch</a>
+                <a href="#!">See More...</a>
+            </div>
+            <div class="shortcuts">
+                <p>Your Shortcuts</p>
+                <a href="#!"><img src="images/shortcut-1.jpg" alt="">Web Developers</a>
+                <a href="#!"><img src="images/shortcut-2.jpg" alt="">Web Design Courses</a>
+                <a href="#!"><img src="images/shortcut-3.jpg" alt="">Full Stack Development</a>
+                <a href="#!"><img src="images/shortcut-4.jpg" alt="">Website Experts</a>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-contents">
+            <!-- Add Story -->
+            <div class="story-reel">
+                <div class="storyreel storyreel1">
+                    <i class="fa fa-plus img"></i>
+                    <!-- <img src="images/upload.jpg" alt=""> -->
+                    <p style="color: #fff;">Create Story</p>
+                </div>
+                <div class="storyreel storyreel2">
+                    <img src="images/img7.png" alt="">
+                    <p>Rany CP</p>
+                </div>
+                <div class="storyreel storyreel5">
+                    <img src="images/img8.png" alt="">
+                    <p>Dee Bliss</p>
+                </div>
+                <div class="storyreel storyreel3">
+                    <img src="images/img9.png" alt="">
+                    <p>Luzzy Queen</p>
+                </div>
+                <div class="storyreel storyreel4">
+                    <img src="images/img10.png" alt="">
+                    <p>Emma Keyz</p>
+                </div>
+            </div>
+
+            <!-- write-post-container -->
+            <div class="write-post">
+                <div class="user-profile">
+                    <img src="images/img.png" alt="">
+                    <div>
+                        <p>Kingsley George</p>
+                        <small>Public <a href="#!"><i class="fa fa-caret-down"></i></a></small>
+                    </div>
+                </div>
+
+                <div class="post-input">
+                    <textarea rows="3" placeholder="What's on your mind, Kingz...?"></textarea>
+                    <div class="add-post-links">
+                        <!-- <a href="#!"><img src="images/video.png" style="border-radius: 5px;" alt=""> Live Video</a>
+                        <a href="#!"><img src="images/photo.jpg" style="border-radius: 5px;" alt=""> Photo</a>
+                        <a href="#!"><img src="images/feeling.jpg" style="border-radius: 10px;" alt=""> Feeling</a> -->
+
+                        <a href="#!">
+                            <i class="fa fa-video-camera"></i>
+                            Videos
+                        </a>
+                        <a href="#!">
+                            <i style="color: #e50510;" class="fa fa-camera"></i>
+                            Photos
+                        </a>
+                        <a href="#!">
+                            <i class="fa fa-thumbs-up"></i>
+                            Feelings
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/img.png" alt="">
+                        <div>
+                            <p>Kingsley George</p>
+                            <span>Jan 28th 2023, 10:20am</span>
+                        </div>
+                    </div>
+                    <a href="#!"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+             
+                <p class="post-text">Contact <span>@Kingz G</span>Contact Kingz GContact Kingz GContact Kingz G
+                Contact Kingz GContact Kingz G <a href="#!">#kingzg</a>
+                <a href="#!">#deebliss</a> <a href="#!">#ranycp</a></p>
+                <img src="images/img4.png" class="post-img" alt="">
+
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><i class="fa fa-thumbs-up"></i><i class="fa fa-smile-o"></i> 720 <small>likes</small></div>
+                            <div>164 <small>comments</small></div>
+                            <div>1.7k <small>views</small></div>
+                            <div>92 <small>shares</small></div>
+                        </div>
+                    </div>
+                    <div class="post-inputs">
+                        <textarea rows="1"></textarea>
+                    </div>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><i class="fa fa-thumbs-up"></i><small>like</small></div>
+                            <div><i class="fa fa-comments"></i><small>comment</small></div>
+                            <div><i class="fa fa-share"></i><small>share</small></div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/img.png" alt=""> <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/img7.png" alt="">
+                        <div>
+                            <p>Rany CP</p>
+                            <span>Feb 24th, 2023, 11:35pm</span>
+                        </div>
+                    </div>
+                    <a href="#!"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Contact <span>@Kingz G</span>Contact Kingz GContact Kingz GContact Kingz G
+                Contact Kingz GContact Kingz G <a href="#!">#kingzg</a>
+                <a href="#!">#ranycp</a> <a href="#!">#luzzyqueen</a></p>
+                <img src="images/forest3.jpg" class="post-img" alt="">
+
+                    
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><i class="fa fa-thumbs-up"></i><i class="fa fa-heart"></i> 654 <small>likes</small></div>
+                            <div>189 <small>comments</small></div>
+                            <div>1.2k <small>views</small></div>
+                            <div>59 <small>shares</small></div>
+                    </div>
+                </div>
+                <div class="post-inputs">
+                    <textarea rows="1"></textarea>
+                </div>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><i class="fa fa-thumbs-up"></i><small>like</small></div>
+                            <div><i class="fa fa-comments"></i><small>comment</small></div>
+                            <div><i class="fa fa-share"></i><small>share</small></div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/img7.png" alt=""> <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/img8.png" alt="">
+                        <div>
+                            <p>Emma Keyz</p>
+                            <span>Jan 12th 2023, 1:20pm</span>
+                        </div>
+                    </div>
+                    <a href="#!"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+             
+                <p class="post-text">Contact <span>@David Keyz</span>Contact Kingz GContact Kingz GContact Kingz G
+                Contact Kingz GContact Kingz G <a href="#!">#davidkeyz</a>
+                <a href="#!">#kingzg</a> <a href="#!">#ranycp</a></p>
+                <img src="images/tower.jpg" class="post-img" alt="">
+
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><i class="fa fa-thumbs-up"></i><i class="fa fa-heart"></i> 650 <small>likes</small></div>
+                            <div>300 <small>comments</small></div>
+                            <div>2.1k <small>views</small></div>
+                            <div>53 <small>shares</small></div>
+                        </div>
+                    </div>
+                    <div class="post-inputs">
+                        <textarea rows="1"></textarea>
+                    </div>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><i class="fa fa-thumbs-up"></i><small>like</small></div>
+                            <div><i class="fa fa-comments"></i><small>comment</small></div>
+                            <div><i class="fa fa-share"></i><small>share</small></div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/img8.png" alt=""> <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/img9.png" alt="">
+                        <div>
+                            <p>Dee Bliss</p>
+                            <span>Dec 25th 2022, 8:20am</span>
+                        </div>
+                    </div>
+                    <a href="#!"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+             
+                <p class="post-text">Contact <span>@Dee Bliss</span>Contact Kingz GContact Kingz GContact Kingz G
+                Contact Kingz GContact Kingz G <a href="#!">#deebliss</a>
+                <a href="#!">#kingzg</a> <a href="#!">#ranycp</a></p>
+                <img src="images/city.jpg" class="post-img" alt="">
+
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><i class="fa fa-thumbs-up"></i><i class="fa fa-heart"></i> 1.5k <small>likes</small></div>
+                            <div>360 <small>comments</small></div>
+                            <div>2.8k <small>views</small></div>
+                            <div>130 <small>shares</small></div>
+                        </div>
+                    </div>
+                    <div class="post-inputs">
+                        <textarea rows="1"></textarea>
+                    </div>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><i class="fa fa-thumbs-up"></i><small>like</small></div>
+                            <div><i class="fa fa-comments"></i><small>comment</small></div>
+                            <div><i class="fa fa-share"></i><small>share</small></div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/img9.png" alt=""> <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/img10.png" alt="">
+                        <div>
+                            <p>Lay Lay</p>
+                            <span>Jan 10th 2023, 5:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#!"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+             
+                <p class="post-text">Contact <span>@Lay Lay</span>Contact Kingz GContact Kingz GContact Kingz G
+                Contact Kingz GContact Kingz G <a href="#!">#thatgirllaylay</a>
+                <a href="#!">#kingzg</a> <a href="#!">#ranycp</a></p>
+                <img src="images/cities.jpg" class="post-img" alt="">
+
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><i class="fa fa-thumbs-up"></i><i class="fa fa-heart"></i> 1.4k <small>likes</small></div>
+                            <div>520 <small>comments</small></div>
+                            <div>3.2k <small>views</small></div>
+                            <div>293 <small>shares</small></div>
+                        </div>
+                    </div>
+                    <div class="post-inputs">
+                        <textarea rows="1"></textarea>
+                    </div>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><i class="fa fa-thumbs-up"></i><small>like</small></div>
+                            <div><i class="fa fa-comments"></i><small>comment</small></div>
+                            <div><i class="fa fa-share"></i><small>share</small></div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/img10.png" alt=""> <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-11.jpg" alt="">
+                        <div>
+                            <p>Nate Evans</p>
+                            <span>Dec 25th 2022, 8:20am</span>
+                        </div>
+                    </div>
+                    <a href="#!"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+             
+                <p class="post-text">Contact <span>@Nate Evans</span>Contact Kingz GContact Kingz GContact Kingz G
+                Contact Kingz GContact Kingz G <a href="#!">#nateevans</a>
+                <a href="#!">#luzzyqueen</a> <a href="#!">#thatgirllaylay</a></p>
+                <img src="images/img6.png" class="post-img" alt="">
+
+
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><i class="fa fa-thumbs-up"></i><i class="fa fa-heart"></i> 1.4k <small>likes</small></div>
+                            <div>492 <small>comments</small></div>
+                            <div>3.1k <small>views</small></div>
+                            <div>317 <small>shares</small></div>
+                        </div>
+                    </div>
+                    <div class="post-inputs">
+                        <textarea rows="1"></textarea>
+                    </div>
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><i class="fa fa-thumbs-up"></i><small>like</small></div>
+                            <div><i class="fa fa-comments"></i><small>comment</small></div>
+                            <div><i class="fa fa-share"></i><small>share</small></div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/member-11.jpg" alt=""> <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+            
+           <a class="Load" href="index.html" target="_blank"><button type="button" class="load-more-btn">Load More</button></a>
+
+
+
+
+
+        </div>
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#!">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker"></i> Willson Tech Park</p>
+                    <a href="#!">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa fa-map-marker"></i> Angel Grove Park</p>
+                    <a href="#!">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#!">Close</a>
+            </div>
+            <img src="images/course-1.png" class="sidebar-ads" alt="">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#!">Hide Chat</a>
+            </div>
+
+            <div class="online-row">
+                <div class="online-user">
+                    <img src="images/member-1.jpg" alt="">
+                </div>
+                <p>Rany CP</p>
+            </div>
+            <div class="online-row">
+                <div class="online-user">
+                    <img src="images/member-2.jpg" alt="">
+                </div>
+                <p>Jack Reacher</p>
+            </div>
+            <div class="online-row">
+                <div class="online-user">
+                    <img src="images/member-3.jpg" alt="">
+                </div>
+                <p>Addison Richie</p>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+<div class="footer">
+    <p>Copyright &copy; 2023 - spookbook</p>
+</div>    
+<script src="script.js"></script>
+</body>
+</html>
