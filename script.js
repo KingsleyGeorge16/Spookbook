@@ -1,7 +1,7 @@
 var profilemenu = document.querySelector(".profile-menu");
 var body = document.querySelector(".body");
 var body1 = document.querySelector(".body1");
-var darkBtn = document.getElementById("dark-button");
+var darkBtn = document.getElementById("dark-btn");
 
 function profileMenuToggle(){
     profilemenu.classList.toggle("profile-menu-height");
@@ -16,7 +16,7 @@ function bodyMenuToggle(){
 // }
 
 darkBtn.onclick = function(){
-    darkBtn.classList.toggle("dark-button-on");
+    darkBtn.classList.toggle("dark-btn-on");
     document.body.classList.toggle("dark-theme")
 
     if(localStorage.getItem("theme") == "light"){
@@ -34,11 +34,11 @@ darkBtn.onclick = function(){
 
 
 if(localStorage.getItem("theme") == "light"){
-    darkBtn.classList.remove("dark-button-on");
+    darkBtn.classList.remove("dark-btn-on");
     document.body.classList.remove("dark-theme");
 }
 else if(localStorage.getItem("theme") == "dark"){
-    darkBtn.classList.add("dark-button-on");
+    darkBtn.classList.add("dark-btn-on");
     document.body.classList.add("dark-theme");
 }
 else{
